@@ -53,9 +53,13 @@ d) Add any of your classmates as collaborators.
 
 Added Lokesh and Swwapnnashree as a collaborator
 
+e) Implement a feature by creating a new branch called ‘feature/sqrt’.
 
-
-
+	git checkout -b feature/sqrt
+ 	ls
+  	nano Calculator.py
+**uncomment the square root part of code**
+   
 
 
 
