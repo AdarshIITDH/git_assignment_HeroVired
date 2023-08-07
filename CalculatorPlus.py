@@ -3,11 +3,14 @@ class Calculator:
     def add(self, a, b): return a + b
     def subtract(self, a, b): return a - b
     def multiply(self, a, b):return a * b
-    def divide(self, a, b): return a / b
+    def divide(self, a, b): 
+	if b == 0:raise ValueError("Cannot divide by zero.") 
+		return a / b
+
 
 # TODO: Implement the following function to calculate the square root of a number.
 
-    # def square_root(self, x):return math.sqrt(x)
+    def square_root(self, x):return math.sqrt(x)
 
 # You need to uncomment the above function and complete its implementation to add the square root feature.
 
@@ -24,5 +27,5 @@ print(f"{num1} / {num2} = {calculator.divide(num1, num2)}")
 
 
 # TODO: Uncomment and test the square root feature. 
-# num3 = 25
-# print(f"The square root of {num3} = {calculator.square_root(num3)}")
+num3 = 25
+print(f"The square root of {num3} = {calculator.square_root(num3)}")
