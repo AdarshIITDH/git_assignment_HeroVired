@@ -42,5 +42,24 @@ num3 = 25
   	git push origin dev
 
 c) Merge this branch with the main branch and make a release of version 1 of the ‘calculator plus app’.
-git checkout main
-git merge
+
+	git checkout main
+	git merge dev
+	git commit -m "step-c committing for version-1 release"
+	git tag -a V1.0 -m "release of version-1 step-c"
+	git push origin main
+	git push origin V1.0	
+d) Add any of your classmates as collaborators.
+
+Added Lokesh and Swwapnnashree as a collaborator
+
+
+
+
+
+
+
+
+
+
+
