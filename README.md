@@ -3,10 +3,10 @@
 
 You are part of a development team working on a Python application called "CalculatorPlus." The application provides basic arithmetic operations, such as addition, subtraction, multiplication, and division. Your task is to implement a new feature that adds support for calculating the square root of a number.
 
-a)	Create a repository name: git_assignment_HeroVired
+a) Create a repository name: git_assignment_HeroVired
 ![image](https://github.com/AdarshIITDH/git_assignment_HeroVired/assets/60352729/54d0043b-be8a-4a28-a499-74e6cc2262c8)
 
-b)	Create a ‘dev’ branch and add this code.
+b) Create a ‘dev’ branch and add this code.
 ```
 git clone git@github.com:AdarshIITDH/git_assignment_HeroVired.git
 cd git_assignment_HeroVired
@@ -37,3 +37,10 @@ num2 = 4
 num3 = 25
 # print(f"The square root of {num3} = {calculator.square_root(num3)}")
 ```
+	git add Calculator.py
+ 	git commit -m "step-b"
+  	git push origin dev
+
+c) Merge this branch with the main branch and make a release of version 1 of the ‘calculator plus app’.
+git checkout main
+git merge
