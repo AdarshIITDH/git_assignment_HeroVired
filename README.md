@@ -138,7 +138,7 @@ b.Stash Changes for Circle Area Feature:
   Note: Uncomment only the code calculating the circle area
 
    	git stash save -u geometry.py
-  save the file by stash so that you can work on circle feature later
+  save the file by stash so that you can work on the circle feature later
 
 c.Create a New Branch for Rectangle Area Feature:
 	- Create a new branch named "feature/rectangle-area" to work on the rectangle area
@@ -153,8 +153,49 @@ d.Stash Changes for Rectangle Area Feature:
  Note: uncomment only the rectangle area feature in the file
 
 	git stash save -u geometry.py
- Note: save the file by stash so that you can work on rectangle feature later
+ Note: save the file by stash so that you can work on the rectangle feature later
 
+e.Switch Back to Circle Area Branch:
+	-  Switch back to the "feature/circle-area" branch to continue working on the circle area feature.
+	-  Retrieve the stashed changes
+	-  Complete the circle area feature implementation and save the changes.
+
+	git checkout feature/circle-area
+ 	git stash list
+  	git stash pop 1
+   	git add geometry.py
+    	git commit -m "circle feature in feature/circle branch"
+
+f.Commit and Push Circle Area Feature:
+
+	git push origin feature/circle/area	
+
+g.Switch Back to Rectangle Area Branch:
+	-  Switch back to the "feature/rectangle-area" branch to continue working on the rectangle area feature.
+	-  Retrieve the stashed changes
+	-  Complete the rectangle area feature implementation and save the changes.
+
+	git checkout feature/rectangle-area
+ 	git stash list
+  	git stash pop 0
+   	git add geometry.py
+    	git commit -m "rectangle feature in feature/rectangle branch"
+
+h. Commit and Push Rectangle Area Feature
+
+	git push origin feature/rectangle-area
+
+i. Create Pull Requests: 
+	- Create a pull request to the ‘dev’ branch.
+j. Review and Merge
+	- Have another team member or reviewer review your pull requests.
+
+Lokesh has checked the code and approved the pull request
+
+After receiving approval, merge both pull requests into the main branch.
+	
+	git checkout main
+ 	git merge dev
 
 
 
