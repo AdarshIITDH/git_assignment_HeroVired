@@ -58,8 +58,45 @@ e) Implement a feature by creating a new branch called ‘feature/sqrt’.
 	git checkout -b feature/sqrt
  	ls
   	nano Calculator.py
-**uncomment the square root part of code**
    
+f) Add the ‘sqrt’ code into it.
+
+** Note: uncomment the square root part of code**
+
+g) While you are working on this feature, imagine that one critical bug is reported in the main branch, and you need to switch back to the ‘dev’ branch, create fixes, and apply them while keeping your ‘feature/sqrt’ branch up-to-date. For this, you need to create
+The bug fixation is in the divide function and the new function :
+
+	git checkout dev
+Note: replace the division function with the below function to make it handle the division with zero.
+def divide(self, a, b): if b == 0: raise ValueError("Cannot divide by zero.") return a / b
+
+h) After completing the feature implementation and ensuring that the application works correctly, create a pull request targeting the main branch.
+
+	git checkout feature/sqrt
+	nano Calculator.py
+	git add Calculator.py
+	git commit -m "step g & H bug is fixed in dev branch"
+	git push origin feature/sqrt
+
+i) Request a code review from a team member and make any necessary improvements based on the review feedback.
+j) Once the code reviewer approves your pull request, merge the "feature/sqrt" branch into the ‘dev’ branch.
+
+	git checkout dev
+	git merge feature/sqrt
+
+Finally, do the testing in the ‘dev’ branch itself and merge it into the ‘main’ branch and create a ‘version 2’ release.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
