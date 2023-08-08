@@ -84,10 +84,11 @@ j) Once the code reviewer approves your pull request, merge the "feature/sqrt" b
 	git checkout dev
 	git merge feature/sqrt
 
-Finally, do the testing in the ‘dev’ branch itself and merge it into the ‘main’ branch and create a ‘version 2’ release.
+k) Finally, do the testing in the ‘dev’ branch itself and merge it into the ‘main’ branch and create a ‘version 2’ release.
 
+![image](https://github.com/AdarshIITDH/git_assignment_HeroVired/assets/60352729/c41aa5c0-9e5d-4e77-8b7e-488a7dc893f8)
 
-
+	git tag -a V2.0 -m "step-k version2 release"
 
 
 
