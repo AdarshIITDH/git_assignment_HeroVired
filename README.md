@@ -102,6 +102,47 @@ Note: Place the file in the same directory
 	git commit -m "question2- large file"
 	git push origin lfs
 Note: Replace the file name in above command with your file name
+Clone the repository in some other machine or directory and check the file is visible or not?
+![image](https://github.com/AdarshIITDH/git_assignment_HeroVired/assets/60352729/23cec2fe-48dc-4d33-95cc-fd5a0fb45026)
+
+Q.3: In this same GitHub repository, create a new branch ‘geometry-calculator’, we'll work on a simple Python program that calculates the area of a circle and the area of a rectangle. We'll use Git stash to switch between working on multiple features (calculating circle area and calculating rectangle area) without committing incomplete changes.
+
+a.Create a New Branch:
+	- Create a new branch named "feature/circle-area" to work on the circle-area feature
+ 
+	git checkout -b geometry-calculator
+	nano geometry.py
+ Note: Paste the below code in the file and save it
+```
+# import math
+# class GeometryCalculator:
+    #def calculate_circle_area(self, radius): return math.pi * radius ** 2
+    #def calculate_rectangle_area(self, length, width): return length * width
+# if  __name__=="main": calculator = GeometryCalculator()
+
+# TODO: Implement the feature to calculate the area of a circle 
+# radius = 5
+# print(f"The area of the circle with radius {radius} ={calculator.calculate_circle_area(radius)}")
+
+# TODO: Implement the feature to calculate the area of a rectangle 
+# length = 10
+# width = 6
+# print(f"The area of the rectangle with length {length} and width {width} ={calculator.calculate_rectangle_area(length, width)}")
+```
+b.Stash Changes for Circle Area Feature:
+	-  Before committing the changes, stash them using git stash to save the incomplete feature implementation.
+	-  Verify that the working directory is clean
+
+	git checkout -b feature/circle-area
+ 	nano geometry.py
+  Note: Uncomment 
+
+
+
+
+
+
+
 
 
 
