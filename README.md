@@ -91,10 +91,17 @@ k) Finally, do the testing in the ‘dev’ branch itself and merge it into the 
 	git tag -a V2.0 -m "step-k version2 release"
 
 
+Q.2: For a project that deals with large binary files, integrate Git LFS (Large File Storage) to handle these files efficiently. Demonstrate how to add, commit, and push binary files to the repository, ensuring they are tracked by Git LFS correctly. Clone the repository on another machine to verify that the binary files are downloaded correctly. In the repository ‘git_assignment_HeroVired’, create a branch ‘lfs’. Upload any large file whose size is over ‘200mb’ and try to push this file into the repository.
 
+	git branch -a lfs
+Note: Place the file in the same directory
 
-
-
+	git lfs install
+	git lfs track filename
+	git add filename
+	git commit -m "question2- large file"
+	git push origin lfs
+Note: Replace the file name in above command with your file name
 
 
 
