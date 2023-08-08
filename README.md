@@ -135,12 +135,25 @@ b.Stash Changes for Circle Area Feature:
 
 	git checkout -b feature/circle-area
  	nano geometry.py
-  Note: Uncomment 
+  Note: Uncomment only the code calculating the circle area
 
+   	git stash save -u geometry.py
+  save the file by stash so that you can work on circle feature later
 
+c.Create a New Branch for Rectangle Area Feature:
+	- Create a new branch named "feature/rectangle-area" to work on the rectangle area
 
+	git checkout -b feature/rectangle-area
 
+d.Stash Changes for Rectangle Area Feature:
+	-  Before committing the changes, stash them using git stash to save the incomplete feature implementation.
+	-  Verify that the working directory is clean
 
+	nano geometry.py
+ Note: uncomment only the rectangle area feature in the file
+
+	git stash save -u geometry.py
+ Note: save the file by stash so that you can work on rectangle feature later
 
 
 
